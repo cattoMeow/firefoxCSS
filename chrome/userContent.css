@@ -9,7 +9,23 @@
     #newtab-search-text {
         background-color: rgba(30, 30, 30, 0.5) !important;
         backdrop-filter: blur(10px) !important;
-        border-radius: 30px !important;
+        border-radius: 8px !important;
     }
+    #searchSuggestionTable{
+        background-color: rgba(30, 30, 30, 0.5) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 8px !important;
+    }
+    .collapsible-section {
+        background-color: rgba(30, 30, 30, 0.5) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 8px !important;
+    }
+    .context-menu{
+        backdrop-filter: blur(10px) !important;
+        background-color: rgba(30, 30, 30, 0.75) !important;
+        border-radius: 8px !important;
+    }
+
 }
 
