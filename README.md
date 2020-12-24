@@ -10,5 +10,5 @@ Custom CSS for Firefox on Desktop
 
 <hr>
 <b>Installation</b>
-follow this tutorial https://www.reddit.com/r/firefox/wiki/userchrome
-Copy my chrome folder to firefox profile folder
+<li>follow this tutorial https://www.reddit.com/r/firefox/wiki/userchrome</li>
+<li>Copy my chrome folder to firefox profile folder</li>
