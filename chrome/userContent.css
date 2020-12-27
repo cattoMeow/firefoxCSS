@@ -1,31 +1,68 @@
 /* Changes startpage background */
-@-moz-document url('about:home'), url('about:newtab') {
+@-moz-document url('about:home'), url('about:newtab'){
     body {
-        background-image: url(bgFolder/yourImage.jpg) !important;
+        background-image: url("bg/yourImage.jpg") !important;
         background-repeat: no-repeat !important;
         background-position: center !important;	
+        background-attachment: fixed !important;
         background-size: cover !important;
-    }
-    #newtab-search-text {
-        background-color: rgba(30, 30, 30, 0.5) !important;
+    }    
+    body:not(.inline-onboarding) .fixed-search .search-wrapper{
+        background-color: var(--newtab-element-active-color) !important;
         backdrop-filter: blur(10px) !important;
-        border-radius: 8px !important;
     }
-    #searchSuggestionTable{
-        background-color: rgba(30, 30, 30, 0.5) !important;
-        backdrop-filter: blur(10px) !important;
-        border-radius: 8px !important;
-    }
-    .collapsible-section {
-        background-color: rgba(30, 30, 30, 0.5) !important;
-        backdrop-filter: blur(10px) !important;
-        border-radius: 8px !important;
-    }
-    .context-menu{
-        backdrop-filter: blur(10px) !important;
-        background-color: rgba(30, 30, 30, 0.75) !important;
-        border-radius: 8px !important;
-    }
-
 }
 
+/*--newtabcolorscheme: rgba(10, 10, 10, 0.35);*/
+
+    /*bg opacity*/
+    .outer-wrapper.ds-outer-wrapper-breakpoint-override{
+        /*background-color: rgba(0, 0, 0, 0.15) !important;*/
+        box-shadow: 0 0 1500px rgba(0,0,0,0.3) inset;
+        position: static !important;
+    }
+    .icon.icon-settings{
+        background-color: var(--newtab-element-active-color) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 10px !important;
+    }
+    #newtab-search-text {
+        background-color: var(--newtab-element-active-color) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 10px !important;
+    }
+    #searchSuggestionTable{
+        background-color: rgba(10, 10, 10, 0.35) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 10px !important;
+    }
+    /*topsites & highlights and perhaps pocket collection*/
+    .collapsible-section { 
+        background-color: var(--newtab-element-active-color) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 10px !important;
+    }
+    /*menu when you click the three dots (...)*/
+    .context-menu{ 
+        backdrop-filter: blur(10px) !important;
+        background-color: var(--newtab-element-active-color) !important;
+        border-radius: 10px !important;
+    }
+    /*aka firefox official announcement*/
+    .SnippetBaseContainer{ 
+        backdrop-filter: blur(10px) !important;
+        background-color: var(--newtab-element-active-color) !important;
+    }
+    .card-outer{ 
+        backdrop-filter: blur(10px) !important;
+        background-color: rgba(10, 10, 10, 0.35) !important;
+    }
+    [lwt-newtab-brighttext] .ds-card-grid.ds-card-grid-border .ds-card:not(.placeholder){
+        backdrop-filter: blur(10px) !important;
+        background-color: var(--newtab-element-active-color) !important;
+        border-radius: 10px !important;
+    }
+    /*firefox logo
+    .search-wrapper .logo-and-wordmark .wordmark{ 
+        fill: rgba(255, 255, 255, 0.90) !important;
+    } */
